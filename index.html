@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Bimalism News — Live Multi-Source Aggregator</title>
+<meta name="description" content="Real-time news from 7 global sources across India, World, Business, Tech, Sports, Entertainment, Health & Science."/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<div class="bn-progress" id="bnProgress" style="width:0"></div>
+
+<header class="bn-header">
+  <div class="bn-topstrip">
+    <span id="bnDate"></span>
+    <span>BIMALISM • LIVE MULTI-SOURCE AGGREGATOR</span>
+    <span id="bnClock"></span>
+  </div>
+  <div class="bn-header-row">
+    <a class="bn-brand" href="?">
+      <div class="bn-logo-mark">B</div>
+      <div class="bn-logo-text">Bimalism<span>news</span></div>
+    </a>
+    <div class="bn-search">
+      <span>🔍</span>
+      <input id="bnSearch" placeholder="Search headlines, topics, sources…"/>
+      <button class="bn-search-clear" id="bnSearchClear" title="Clear">×</button>
+    </div>
+    <div class="bn-header-actions">
+      <select class="bn-country" id="bnLang" title="Language">
+        <option value="">🌐 English</option>
+        <option value="hi">हिन्दी</option>
+        <option value="ta">தமிழ்</option>
+        <option value="te">తెలుగు</option>
+        <option value="bn">বাংলা</option>
+        <option value="mr">मराठी</option>
+        <option value="gu">ગુજરાતી</option>
+        <option value="kn">ಕನ್ನಡ</option>
+        <option value="ml">മലയാളം</option>
+        <option value="pa">ਪੰਜਾਬੀ</option>
+        <option value="ur">اردو</option>
+        <option value="fr">Français</option>
+        <option value="es">Español</option>
+        <option value="de">Deutsch</option>
+        <option value="ar">العربية</option>
+        <option value="zh-CN">中文</option>
+        <option value="ja">日本語</option>
+        <option value="ru">Русский</option>
+      </select>
+      <button class="bn-icon-btn" id="bnBookmarksBtn" title="Bookmarks">🔖<span class="bn-badge" id="bnBmCount" style="display:none">0</span></button>
+      <button class="bn-icon-btn" id="bnThemeBtn" title="Theme">🌙</button>
+    </div>
+  </div>
+  <nav class="bn-categories">
+    <div class="bn-cats-row" id="bnCats"></div>
+  </nav>
+  <div class="bn-ticker">
+    <div class="bn-ticker-tag">● LIVE</div>
+    <div class="bn-ticker-track"><div class="bn-ticker-inner" id="bnTicker">Loading breaking headlines…</div></div>
+  </div>
+</header>
+
+<main class="bn-main bn-container">
+  <h2 class="bn-section-title" id="bnTitle">Breaking <span class="muted" id="bnCount"></span></h2>
+  <section class="bn-hero-grid" id="bnHero"></section>
+  <section class="bn-grid" id="bnGrid"></section>
+</main>
+
+<footer class="bn-footer">
+  <div class="bn-container">
+    <span>© Bimalism News • Aggregated from MediaStack, GNews, NewsAPI, Currents, TheNewsAPI, TheNews.io, NewsData.io</span>
+    <span>Auto-refresh every 5 min</span>
+  </div>
+</footer>
+
+<button class="bn-scrolltop" id="bnTop" style="display:none">↑</button>
+
+<!-- Hidden Google Translate mount -->
+<div id="google_translate_element" style="position:fixed;left:-9999px;top:-9999px"></div>
+<script>
+  function googleTranslateElementInit(){
+    new google.translate.TranslateElement({pageLanguage:'en',autoDisplay:false},'google_translate_element');
+  }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
+
+<script src="app.js"></script>
+</body>
+</html>
