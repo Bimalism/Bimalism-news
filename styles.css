@@ -87,6 +87,17 @@ body{background:var(--bg);color:var(--text);font-family:ui-serif,Georgia,"Times 
 .bn-btn{padding:10px 18px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--text);cursor:pointer;font-family:ui-sans-serif,system-ui;font-size:14px;font-weight:600;text-decoration:none;transition:.2s;display:inline-block}
 .bn-btn:hover{transform:translateY(-1px);box-shadow:var(--shadow)}
 .bn-btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.bn-external-feeds{margin-top:44px;padding:24px;border:1px solid var(--line);border-radius:20px;background:var(--surface);box-shadow:var(--shadow)}
+.bn-section-head{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:20px;flex-wrap:wrap}
+.bn-section-copy{font-family:ui-sans-serif,system-ui;color:var(--muted);margin:0}
+.bn-feed-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.bn-feed-card{border:1px solid var(--line);border-radius:16px;padding:16px;background:color-mix(in srgb,var(--surface) 90%,var(--bg));display:flex;flex-direction:column;gap:12px;min-height:220px}
+.bn-feed-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.bn-text-link{font-family:ui-sans-serif,system-ui;font-size:12px;font-weight:700;color:var(--accent);text-decoration:none}
+.bn-feed-embed{min-height:360px}
+.bn-feed-embed iframe{flex:1;min-height:320px;width:100%;border:0;border-radius:12px;background:var(--bg)}
+.bn-feed-card h3{margin:0;font-size:20px}
+.bn-feed-card p{margin:0;color:var(--muted);font-family:ui-sans-serif,system-ui;line-height:1.6}
 .bn-footer{border-top:1px solid var(--line);padding:32px 20px;margin-top:40px;font-family:ui-sans-serif,system-ui;font-size:14px;color:var(--muted)}
 .bn-footer .bn-container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
 .bn-scrolltop{position:fixed;bottom:24px;right:24px;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--text);font-size:20px;font-weight:700;cursor:pointer;box-shadow:var(--shadow);z-index:40;transition:.2s}
