@@ -106,3 +106,34 @@ body{background:var(--bg);color:var(--text);font-family:ui-serif,Georgia,"Times 
 @media (max-width:900px){.bn-hero-grid{grid-template-columns:1fr}.bn-hero{min-height:380px}.bn-header-row{grid-template-columns:auto auto}.bn-search{grid-column:1/-1;order:3}.bn-country{display:none}}
 @media (max-width:520px){.bn-logo-text{font-size:18px}.bn-hero-body{padding:20px}.bn-section-title{font-size:24px}.bn-feat{grid-template-columns:100px 1fr}.bn-main{padding:20px 16px 40px}.bn-topstrip>span:last-child{display:none}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+/* ============== SITE FOOTER NAV ============== */
+.bn-footer-brand{display:flex;flex-direction:column;gap:4px}
+.bn-footer-nav{display:flex;gap:16px;flex-wrap:wrap}
+.bn-footer-nav a{color:var(--muted);text-decoration:none;font-size:13px}
+.bn-footer-nav a:hover{color:var(--accent)}
+
+/* ============== STATIC PAGE HEADER/NAV ============== */
+.bn-header-row-static{grid-template-columns:auto 1fr}
+.bn-static-nav{display:flex;gap:22px;justify-content:flex-end;align-items:center;font-family:ui-sans-serif,system-ui;font-size:14px}
+.bn-static-nav a{color:var(--text);text-decoration:none;font-weight:600}
+.bn-static-nav a:hover,.bn-static-nav a.active{color:var(--accent)}
+@media (max-width:700px){.bn-static-nav{gap:12px;font-size:13px;flex-wrap:wrap;justify-content:flex-start}}
+
+/* ============== STATIC / PROSE PAGES ============== */
+.bn-static-page{max-width:820px;margin:0 auto}
+.bn-static-page h1{font-size:36px;line-height:1.15;margin:0 0 8px}
+.bn-static-sub{color:var(--muted);font-family:ui-sans-serif,system-ui;margin:0 0 32px;font-size:15px}
+.bn-static-page h2{font-size:21px;margin:36px 0 12px}
+.bn-static-page p{line-height:1.75;margin:0 0 16px;font-family:ui-sans-serif,system-ui;font-size:15.5px;color:var(--text)}
+.bn-static-page ul{line-height:1.8;font-family:ui-sans-serif,system-ui;font-size:15.5px;padding-left:22px;margin:0 0 16px}
+.bn-static-page a{color:var(--accent)}
+.bn-static-page .bn-updated{color:var(--muted);font-family:ui-sans-serif,system-ui;font-size:13px}
+
+/* ============== EDITOR'S PICKS ============== */
+.bn-pick{padding:28px 0;border-bottom:1px solid var(--line)}
+.bn-pick:last-child{border-bottom:0}
+.bn-pick-meta{font-family:ui-sans-serif,system-ui;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}
+.bn-pick h2{margin-top:0}
+.bn-contact-card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:28px;margin-top:8px}
+.bn-contact-card h2{margin-top:0}
